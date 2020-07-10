@@ -1,0 +1,30 @@
+S1
+vlan 3
+	name Management
+vlan 4
+	name Operations
+vlan 7
+	name ParkingLot
+vlan 8 
+	name Native
+int vlan 3 
+	ip add 192.168.3.11 255.255.255.0 
+	exit
+ip default-gateway 192.168.3.1
+inteface range fa 0/2-14, fa 0/16-24
+	switchport mode access
+	switchport access vlan 7
+	shutdown
+interface range gigabitEthernet 0/1 - 2
+	switchport mode access
+	switchport access vlan 7
+	shutdown	
+interface f0/15
+	switchport mode access
+	switchport access vlan 4
+interface f0/1
+	switchport mode trunk
+	switchport trunk native vlan 8
+	switchport trunk allowed vlan remove 1
+	switchport trunk allowed vlan remove 7
+copy running-config startup-config
