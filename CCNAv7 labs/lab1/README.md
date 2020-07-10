@@ -240,4 +240,4 @@ R1
 ![](https://github.com/Samsonvl/Network-OTUS-and-CCNAv7/blob/master/CCNAv7%20labs/lab1/все%20пинги%20и%20трасерт.png)
 
 
-с полной конфигурацие можно ознакомиться тут ![тут](https://github.com/Samsonvl/Network-OTUS-and-CCNAv7/tree/master/CCNAv7%20labs/lab1/config) 
+с полной конфигурацие можно ознакомиться ![тут](https://github.com/Samsonvl/Network-OTUS-and-CCNAv7/tree/master/CCNAv7%20labs/lab1/config) 
